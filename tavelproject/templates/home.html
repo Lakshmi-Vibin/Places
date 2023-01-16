@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        .img1 {
+        text-align :center;
+        }
+        .back {
+        text-align :right;
+        }
+    </style>
+</head>
+<body style="background-image:url({% static 'images/destination_9.jpg' %});background-repeat:no-repeat;background-size:cover;">
+<div class="back">
+    <a href="{% url 'home' %}"> <h4 style="color:white;">Home</h4></a>
+</div>
+<div class="img1">
+   <img src="{% static 'images/logo.jpg' %}" width="350px" height="150px"><h5 style="color:white;"><i>(Your Travelling Partner)</i></h5>
+</div>
+
+<h3 style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Us</h3>
+<pre style="color:white;font-size=22px;font-family:Times New Roman">
+    <strong>1. About this </strong>
+    The World Travel Guide (WTG) is the flagship digital consumer brand within the Columbus Travel Media portfolio.
+    A comprehensive guide to the world’s best travel destinations, its print heritage stretches back 30 years, with the online portal reaching its 19-year anniversary in 2018.
+    Available in English, German, French and Spanish versions, the WTG provides detailed and accurate travel content designed to inspire global travellers. It covers all aspects, from cities to airports, cruise ports to ski and beach resorts, attractions to events, and it also includes weekly travel news, features and quizzes.
+    Updated every day by a dedicated global editorial team, the portal logs 1 million+ unique users monthly.
+
+
+    <b>2. Who we are</b>
+    Columbus Travel Media (CTM) is one of the most respected and successful names in the global travel industry, with a long and rich company heritage spanning 30 years.
+    The definitive resource for global travel content, its reputation has been built on journalistic credibility.
+    CTM is dedicated to the provision of objective, accurate, informative and reliable travel content in various formats, including the World Travel Guide for consumers, Columbus Travel Professional for travel industry professionals and extensive licensed and bespoke content for commercial partners through its specialist division, Columbus Content Solutions.
+    A fast-growing, pioneering and diverse global travel content business, contact us to find out more about us.
+
+
+    <b>3. Our team</b>
+    We’ve been travelling the world for over 30 years, building a reputation for providing quality travel content that’s inspiring, engaging and informative.
+    With all of our guides and features written and updated by a global network of expert travel writers that includes some of the best names in the business, we pride ourselves on producing content that stands out from the crowd.
+    Regrettably, we aren’t able to accept guest posts and won’t be able to reply to guest post requests.
+</pre>
+
+</body>
+</html>

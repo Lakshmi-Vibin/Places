@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <style>
+        h1 {
+         text-align:center;
+         font-family:times new roman;
+         color:blue;
+         }
+        body{
+
+        background-repeat:no-repeat;
+        background-size:100%;
+        color:black;
+        }
+        #f {
+         text-align:left-center;
+         margin:auto;
+         color:green;
+         }
+
+
+    </style>
+</head>
+<body style="background-image:url({% static 'images/cherry-bac.jpg' %})">
+<form id="f" method="POST" action="login">
+    {% csrf_token %}
+<h1>Login Page</h1>
+    <div style="padding=20px;">
+    <label>UserName</label><br><br>
+<input type="text" name="uname" required="required"><br><br>
+     <label>Password</label><br>
+<input type="password" name="pswd" required="required"><br><br>
+        <button type="submit">Login</button><br>
+        </div>
+</form>
+{% for i in messages %}
+<h4>{{i}}</h4>
+{% endfor %}
+</body>
+</html>
